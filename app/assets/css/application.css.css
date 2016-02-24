@@ -13,8 +13,8 @@ Error: File to import not found or unreadable: welcome.
 182: @import 'welcome';
 183: 
 184: @import 'normalize';
-185: 
-186: @import 'eventos';
+185: /*
+186: @import 'eventos';*\/
 
 Backtrace:
 /Users/carlosandresmartinezpoveda/Desktop/proyecto/proyecto/app/assets/stylesheets/application.css.scss:182
@@ -52,4 +52,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: welcome.\A        Load paths:\A          /Users/carlosandresmartinezpoveda/Desktop/proyecto/proyecto/app/assets/stylesheets\A          Sass::Globbing::Importer\A         on line 182 of /Users/carlosandresmartinezpoveda/Desktop/proyecto/proyecto/app/assets/stylesheets/application.css.scss\A \A 177: 	 	margin-top: .5rem !important;\A 178: 	 	}#form{\A 179: 	 		padding: 0 0 5rem 0;\A 180: 	 	\A 181: 	 }\A 182: @import 'welcome';\A 183: \A 184: @import 'normalize';\A 185: \A 186: @import 'eventos';"; }
+  content: "Error: File to import not found or unreadable: welcome.\A        Load paths:\A          /Users/carlosandresmartinezpoveda/Desktop/proyecto/proyecto/app/assets/stylesheets\A          Sass::Globbing::Importer\A         on line 182 of /Users/carlosandresmartinezpoveda/Desktop/proyecto/proyecto/app/assets/stylesheets/application.css.scss\A \A 177: 	 	margin-top: .5rem !important;\A 178: 	 	}#form{\A 179: 	 		padding: 0 0 5rem 0;\A 180: 	 	\A 181: 	 }\A 182: @import 'welcome';\A 183: \A 184: @import 'normalize';\A 185: /*\A 186: @import 'eventos';*/"; }
