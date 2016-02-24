@@ -11,7 +11,7 @@
 					<li><%= link_to "Create an event", new_evento_registration_path  %></li>
 				<% else %>
 				<li><a href="eventos.html">Dashboard</a></li>
-				<li><a href="eventos.html">Explore</a></li>
+				<li><%= link_to "Explore", eventos_path %>	</li>
 				<li><%= link_to "Sign-Out",destroy_evento_session_path, method: :delete %> </li>
 				<% end %>
 				</ul>
@@ -21,8 +21,8 @@
 		<div class="wrapper_skinny">
 				<h1>Create a new event <br>, y demas texto.</h1>
 				<%= link_to "Create an event", new_evento_registration_path, class:"button button_highlight" %>
+			<%= link_to "Explore", eventos_path, class: "button button_white" %>	
 				
-				<a href="eventos.html" class="button button_white">Explore</a>
 		</div>
 		
 	</div>

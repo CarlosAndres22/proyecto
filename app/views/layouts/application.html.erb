@@ -23,17 +23,17 @@
 
  <header id="main_header"class="cf">
 			<div class="wrapper_wide">
-			<%= link_to "Podcast.fm", root_path, id:"logo" %>
+			<%= link_to "Por Definir", root_path, id:"logo" %>
 			
 			<nav>
 				<ul>
 				<% unless evento_signed_in? %>
-					<li><a href="eventos.html">Explore</a></li>
+					<li><%= link_to "Explore", eventos_path %></li>
 					<li>	<%= link_to "Sign In", new_evento_session_path %></li>
 					<li><%= link_to "Create an event", new_evento_registration_path  %></li>
 				<% else %>
 				<li><a href="eventos.html">Dashboard</a></li>
-				<li><a href="eventos.html">Explore</a></li>
+				<li><%= link_to "Explore", eventos_path %>	</li>
 				<li><%= link_to "Sign-Out",destroy_evento_session_path, method: :delete %> </li>
 				<% end %>
 					

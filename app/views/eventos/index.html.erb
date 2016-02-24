@@ -1,0 +1,23 @@
+
+		<div id="banner" class="eventos_banner">
+		<h1>Text goes in here</h1></div>
+		<div id="eventos" class="cf">
+			<div class="wrapper">
+				<ul>
+					<% @eventos.each do |evento| %>
+					<%= link_to evento do %>
+					<li>
+							<img src="images/dragon.png" alt="Ninguno">
+							<div class="podcast_overview">
+								<h2> <%= evento.title %> </h2>
+							<p class="episode_count"> persona</p>
+							</div>
+							
+						</li>
+					<% end %>
+					<% end %>
+					
+				</ul>	
+
+			</div>
+		</div>
