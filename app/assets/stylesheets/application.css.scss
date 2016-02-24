@@ -107,13 +107,13 @@ body {
 
 	 }
 	 .eventos_banner{
-	 		background-image: url(../images/banner1.jpg);
+	 		background-image: image-url("banner1.jpg");
 	 }
 	 .sign-in_banner{
-	 		background-image: url(../images/space.jpg);
+	 		background-image: image-url("space.jpg");
 	 }
 	 .sign-up_banner{
-	 		background-image: url(../images/event.jpg )
+	 		background-image: image-url("event.jpg" )
 
 	 }
 
@@ -182,5 +182,5 @@ body {
 @import 'welcome';
 
 @import 'normalize';
-/*
-@import 'eventos';*/
+
+@import 'eventos';
