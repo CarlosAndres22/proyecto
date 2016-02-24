@@ -5,16 +5,22 @@
 			<a href="index.html" id="logo"> Holaaa</a>
 			<nav>
 				<ul>
+					<% unless evento_signed_in? %>
 					<li><a href="eventos.html">Explore</a></li>
-					<li><a href="sign-in.html">Sign In</a></li>
-					<li><a href="sign-up.html">Create an Event</a></li>
+					<li>	<%= link_to "Sign In", new_evento_session_path %></li>
+					<li><%= link_to "Create an event", new_evento_registration_path  %></li>
+				<% else %>
+				<li><a href="eventos.html">Explore</a></li>
+				<li><%= link_to "Sign-Out",destroy_evento_session_path, method: :delete %> </li>
+				<% end %>
 				</ul>
 			</nav>
 		</div>
 		</header>
 		<div class="wrapper_skinny">
 				<h1>Create a new event <br>, y demas texto.</h1>
-				<a href="sign-up.html" class="button button_highlight">Create an event</a>
+				<%= link_to "Create an event", new_evento_registration_path, class:"button button_highlight" %>
+				
 				<a href="eventos.html" class="button button_white">Explore</a>
 		</div>
 		
