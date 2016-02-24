@@ -10,6 +10,7 @@
 					<li>	<%= link_to "Sign In", new_evento_session_path %></li>
 					<li><%= link_to "Create an event", new_evento_registration_path  %></li>
 				<% else %>
+				<li><a href="eventos.html">Dashboard</a></li>
 				<li><a href="eventos.html">Explore</a></li>
 				<li><%= link_to "Sign-Out",destroy_evento_session_path, method: :delete %> </li>
 				<% end %>
